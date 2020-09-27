@@ -1,7 +1,6 @@
 package bean;
 
 public class WeightData {
-
 	private String SerialNo;
 	private String VehicleNo;
 	private String Material;
@@ -280,25 +279,4 @@ public class WeightData {
     public void setDeviceId(String DeviceId) {
         this.DeviceId = DeviceId;
     }
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
