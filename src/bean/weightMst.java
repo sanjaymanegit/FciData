@@ -165,14 +165,14 @@ public class WeightMst {
 			}catch(Exception e){ System.out.println(e);}	
 	    try{
     		 Statement stmt=con.createStatement();  
-    		 String sql = "INSERT INTO batch_mst (BATCH_ID, BATCH_ID_DISPLAY, BATCH_DATE,ACCPT_WT_KG,ACCPT_BAGS_CNT, RECV_WT_KG, RECV_BAGS_CNT,TL_RECVED, TL_ACCPTED, STORAGE_BAGS, MATERIAL_TYPE, STATUS, WAGON_CNT, REQUIRED_TRUCKS, CONTRACTOR_NAME, DEVICE_ID) values ('"
+    		 String sql = "INSERT INTO batch_mst (BATCH_ID, BATCH_ID_DISPLAY, BATCH_DATE,ACCPT_WT_KG,ACCPT_BAGS_CNT, RECV_WT_KG, RECV_BAGS_CNT,TL_RECVED, TL_ACCPTED, STORAGE_BAGS, MATERIAL_TYPE, STATUS, WAGON_CNT, REQUIRED_TRUCKS, CONTRACTOR_NAME, DEVICE_ID,DEVICE_LOCATION_TYPE) values ('"
     		  +msg.getBatchId()+"','"+msg.getBatchIdDisplay()+"','"
     		  +msg.getBatchDt()+"','"
     		  +msg.getAccpetedWtKg()+"','"+msg.getAcceptedBagsCnt()+"','"+msg.getReceivedWtKg()+"','"
     		  +msg.getReceivedBagsCnt()+"','"+msg.getTLReceived()+"','"+msg.getTLAccepted()+"','"
     		  +msg.getShortageBags()+"','"+msg.getMaterial()+"','"+msg.getStatus()+"','"
     		  +msg.getWagonCnt()+"','"+msg.getRequiredTrucks()+"','"+msg.getContractorName()+"','"    		  						  
-    		  +msg.getDeviceId()+"')";    		 
+    		  +msg.getDeviceId()+"','"+msg.getDeviceLocationType()+"')";    		 
              System.out.println("Insert Batch SQL :" + sql);
     		 stmt.executeUpdate(sql);
     			}catch(Exception e){ System.out.println(e);}

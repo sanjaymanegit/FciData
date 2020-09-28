@@ -1,6 +1,6 @@
 package bean;
 
-public class BatchData {
+public class BatchData{
 
 	private String BatchId;
 	private String BatchIdDisplay;
@@ -18,6 +18,7 @@ public class BatchData {
 	private String RequiredTrucks;
 	private String ContractorName;	
 	private String DeviceId;
+	private String DeviceLocationType;
 	
     
     public String getBatchId() {
@@ -151,24 +152,12 @@ public class BatchData {
         this.DeviceId = DeviceId;
     }
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    public String getDeviceLocationType() {
+        return DeviceLocationType;
+    }
+ 
+    public void setDeviceLocationType(String DeviceLocationType) {
+        this.DeviceLocationType = DeviceLocationType;
+    }
 	
 }
